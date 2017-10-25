@@ -2,7 +2,7 @@
 
 @{
     Layout = "~/Views/Shared/_Layout_base.cshtml";
-    ViewData["serviceName"] = "New Service"
+    ViewData["serviceName"] = "New Service";
     ViewData["pageTitle"] = "Welcome to " + ViewData["serviceName"];
     ViewData["headerClass"] = "with-proposition";    
 }
@@ -12,7 +12,7 @@
         <div class="content">
             <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
             <nav id="proposition-menu">
-            <a href="~/" id="proposition-name">ViewData["serviceName"]</a>
+            <a href="~/" id="proposition-name">@ViewData["serviceName"]</a>
             <ul id="proposition-links">
                 <li><a href="https://www.gov.uk/service-manual/service-standard">Digital Service Standard</a></li>
                 <li><a href="https://www.gov.uk/service-toolkit">Service Toolkit</a></li>
