@@ -2,4 +2,6 @@ bin
 obj
 sassobj
 node_modules
-wwwroot
+wwwrootdeploy.sh
+deploy.sh
+upload.sh
