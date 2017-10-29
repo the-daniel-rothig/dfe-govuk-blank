@@ -1,3 +1,5 @@
-echo nexus3_credentials=$nexus3_credentials
-echo openshift_credentials=$openshift_credentials
-
+echo oc_nexus_credentials=$oc_nexus_credentials
+echo oc_openshift_credentials=$oc_openshift_credentials
+echo BUILD_ARTIFACTSTAGINGDIRECTORY=$BUILD_ARTIFACTSTAGINGDIRECTORY
+echo BUILD_BINARIESDIRECTORY=$BUILD_BINARIESDIRECTORY
+echo BUILD_BUILDID=$BUILD_BUILDID
