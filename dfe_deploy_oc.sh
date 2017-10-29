@@ -1,0 +1,3 @@
+echo nexus3_credentials=$nexus3_credentials
+echo openshift_credentials=$openshift_credentials
+
