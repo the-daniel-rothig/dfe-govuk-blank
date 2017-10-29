@@ -1,4 +1,4 @@
-echo source ./deploy.sh $1
+echo source ./deploy.sh "$@"
 echo ### BEGIN deploy.sh
-source ./deploy.sh $1
+source ./deploy.sh "$@"
 echo ### END deploy.sh
