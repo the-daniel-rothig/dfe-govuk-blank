@@ -1,3 +1,5 @@
+### This file takes a built and zipped VSO, adds a deploy to rhel7 docker file, and uploads it to a nexus repo, the deploys it to openshift. 
+
 echo oc_nexus_credentials=$oc_nexus_credentials
 echo oc_openshift_credentials=$oc_openshift_credentials
 echo oc_dfe_deploy_url=$oc_dfe_deploy_url
