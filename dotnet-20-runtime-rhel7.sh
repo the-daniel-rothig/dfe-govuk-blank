@@ -6,6 +6,8 @@ echo oc_dfe_deploy_url=$oc_dfe_deploy_url
 echo oc_nexus_repo=$oc_nexus_repo
 echo oc_project=$oc_project
 
+
+
 echo BUILD_ARTIFACTSTAGINGDIRECTORY=$BUILD_ARTIFACTSTAGINGDIRECTORY
 echo BUILD_BINARIESDIRECTORY=$BUILD_BINARIESDIRECTORY
 echo BUILD_BUILDID=$BUILD_BUILDID
@@ -34,7 +36,7 @@ curl -u $oc_nexus_credentials -O -k https://nexus.demo.dfe.secnix.co.uk/reposito
 tar xfv oc-3.6.173.0.49-linux.tar
 
 echo ### LOGGING IN
-./oc login --insecure-skip-tls-verify https://demo.dfe.secnix.co.uk:8443 --token=$oc_openshift_credentials
+./oc login --insecure-skip-tls-verify https://demo.dfe.secnix.co.uk:8443 --token="$oc_openshift_credentials"
 
 echo ### RUNNIGN BUILD appname IN $OC_PROJECT WITH $BUILD_BUILDID.zip
 ./oc project $OC_PROJECT
